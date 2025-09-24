@@ -1,2 +1,13 @@
-# My-first-website
+# Reediculous Two 
 My first GitHub Pages website for Reediculous2
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My First Website</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>Built entirely from my iPhone with GitHub Pages.</p>
+  </body>
+</html>
