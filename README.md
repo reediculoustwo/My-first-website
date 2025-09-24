@@ -1,13 +1,12 @@
-# Reediculous Two 
-My first GitHub Pages website for Reediculous2
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My First Website</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <p>Built entirely from my iPhone with GitHub Pages.</p>
-  </body>
-</html>
+reediculous-two/
+│
+├─ index.html
+├─ style.css
+├─ teaching-oboe-bassoon/
+│    ├─ charis-lai.html
+│    └─ thais-bordes.html
+├─ reed-enquiries/
+│    ├─ reed-mentoring.html
+│    └─ buying-reeds.html
+├─ concerts-workshops.html
+└─ contact.html
