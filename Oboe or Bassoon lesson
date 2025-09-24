@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charis Lai - Reediculous Two</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Charis Lai</h1>
+    <p>Oboe & Cor Anglais Teacher</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html">Teaching Oboe & Bassoon</a>
+        <ul>
+          <li><a href="charis-lai.html">Charis Lai</a></li>
+          <li><a href="thais-bordes.html">Thaïs Bordes</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Reed Enquiries</a>
+        <ul>
+          <li><a href="../reed-enquiries/reed-mentoring.html">Reed Mentoring</a></li>
+          <li><a href="../reed-enquiries/buying-reeds.html">Buying Reeds</a></li>
+        </ul>
+      </li>
+      <li><a href="../concerts-workshops.html">Concerts & Workshops</a></li>
+      <li><a href="../contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Biography</h2>
+    <p>Charis Lai is an accomplished oboist and cor anglais player with extensive teaching experience. [Add more content here]</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Reediculous Two | All Rights Reserved
+  </footer>
+</body>
+</html>
