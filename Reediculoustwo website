@@ -8,8 +8,8 @@ This is the official website for Reediculoustwo, showcasing our biography, schoo
  ├── performances.html  ← Performances
  ├── contact.html       ← Contact us
  ├── style.css          ← Shared styling
- └── /images            ← Folder for pictures/logos
-     ├── Thais.jpg
+ └── images            ← Folder for pictures/logos
+     ├── .github/Thais.jpg
      ├── Charis.jpg
      └── logo.png
 ## Usage / Deployment
