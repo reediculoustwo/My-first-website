@@ -156,7 +156,7 @@ nav a:hover {
 .bio {
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 2rem 0;
   flex-wrap: wrap; /* Makes it responsive on small screens */
 }
@@ -164,7 +164,7 @@ nav a:hover {
 .bio img {
   width: 200px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 8px; /* optional, makes rounded corners */
   object-fit: cover;
 }
 
@@ -179,4 +179,10 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+.bio article {
+  flex: 1; /* text takes up remaining space */
+}
+.bio.reverse {
+  flex-direction: row-reverse; /* flips image to the right */
 }
