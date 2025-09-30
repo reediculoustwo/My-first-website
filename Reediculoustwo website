@@ -1,0 +1,29 @@
+This is the official website for Reediculoustwo, showcasing our biography, school workshops, performances, and contact information. The site is built with HTML, CSS, and optional JavaScript for interactivity.
+/ (root)
+ ├── index.html         ← Home page
+ ├── biography.html     ← Biography
+ ├── teaching.html      ← Lessons 
+ ├── workshops.html     ← School workshop
+ ├── enquiries.html     ← Reed enquiries
+ ├── performances.html  ← Performances
+ ├── contact.html       ← Contact us
+ ├── style.css          ← Shared styling
+ └── /images            ← Folder for pictures/logos
+## Usage / Deployment
+
+To update the website:
+
+1. Edit the HTML, CSS, or JS files locally.
+2. Stage your changes:
+```bash
+git add .
+## Deployment
+This site is hosted using GitHub Pages.  
+To update the site:
+1. Edit the HTML/CSS files locally.
+2. Commit changes: `git commit -m "Update page"`
+3. Push to GitHub: `git push origin main`
+## Contact
+Email: reediculoustwo@gmail.com
+Instagram: Reed_iculous.2 https://www.instagram.com/reed_iculous.2/profilecard/?igsh=YmpoeDZqMmRtaXdx
+
