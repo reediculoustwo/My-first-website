@@ -9,7 +9,7 @@ This is the official website for Reediculoustwo, showcasing our biography, schoo
  ├── contact.html       ← Contact us
  ├── style.css          ← Shared styling
  └── /images            ← Folder for pictures/logos
-     ├── .github/Thais.jpg
+     ├── Thais.jpg
      ├── Charis.jpg
      └── logo.png
 ## Usage / Deployment
