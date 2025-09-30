@@ -1,3 +1,53 @@
+/* Global styles */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9; /* light background for readability */
+  color: #333;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 60px; /* adjust size */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #f4d03f; /* bright yellow accent */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f4d03f; /* hover matches the logo accent */
+}
+
+/* Header */
+header {
+  background: #1e2a5e; /* navy blue */
+  color: #fff;
+  padding: 1rem;
+}
+
 <link rel="stylesheet" href="style.css">
 /* General Reset */
 * {
@@ -45,10 +95,35 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  background: #333;
-  color: #fff;
-  padding: 2rem;
+  padding: 3rem 2rem;
   text-align: center;
+  background: linear-gradient(to right, #f4d03f, #f9e79f); /* cheerful yellow gradient */
+  color: #1e2a5e;
+  border-bottom: 4px solid #1e2a5e;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e2a5e;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
 /* Biography Section */
