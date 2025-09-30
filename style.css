@@ -79,3 +79,22 @@ footer {
   width: 100%;
   bottom: 0;
 }
+/* Biography Section */
+.bio {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.bio img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.bio-text {
+  flex: 1;
+}
