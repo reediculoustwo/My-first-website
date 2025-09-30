@@ -1,12 +1,9 @@
-reediculous-two/
-│
-├─ index.html
-├─ style.css
-├─ teaching-oboe-bassoon/
-│    ├─ charis-lai.html
-│    └─ thais-bordes.html
-├─ reed-enquiries/
-│    ├─ reed-mentoring.html
-│    └─ buying-reeds.html
-├─ concerts-workshops.html
-└─ contact.html
+/ (root)
+ ├── index.html         ← Home page
+ ├── biography.html     ← Biography
+ ├── workshops.html     ← School workshop
+ ├── enquiries.html     ← Reed enquiries
+ ├── performances.html  ← Performances
+ ├── contact.html       ← Contact us
+ ├── style.css          ← Shared styling
+ └── /images            ← Folder for pictures/logos
