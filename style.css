@@ -98,3 +98,85 @@ footer {
 .bio-text {
   flex: 1;
 }
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #fdf6f0; /* light cream */
+  color: #333333; /* dark gray */
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background-color: #005f6b; /* deep teal */
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f5c518; /* soft gold hover */
+}
+
+/* Hero Section (if used) */
+.hero {
+  background-color: #ff6f61; /* coral accent */
+  color: #ffffff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Biography Section */
+.bio {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap; /* Makes it responsive on small screens */
+}
+
+.bio img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.bio-text {
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  background-color: #005f6b;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
