@@ -219,9 +219,20 @@ footer {
 
 /* Biography Section */
 .bio {
+  max-width: 800px;       /* limits width for readability */
+  margin: 0 auto;         /* centers the section */
+  padding: 20px;          /* spacing around the text */
+  font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
+}
+
+.biography p {
+  text-align: justify;    /* aligns both left and right edges */
+  text-align-last: left; 
+  line-height: 1.6;       /* spacing between lines for readability */
+  font-size: 1.1rem;      /* comfortable reading size */
 }
 
 .bio img {
