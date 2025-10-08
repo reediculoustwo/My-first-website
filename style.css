@@ -263,6 +263,9 @@ footer {
 
 .bio-text {
   flex: 1;
+  text-align: justify;
+  line-heigh: 1.6;
+  font size: 1.1rem;
 }
 /* General Reset */
 * {
