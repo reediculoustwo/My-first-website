@@ -239,8 +239,8 @@ footer {
 }
 
 .bio img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -290,7 +290,7 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background-color: #fadfb4; /* light cream */
-  color: #333333; /* dark gray */
+  color: #7E3514; /* dark gray */
   padding: 0 1rem;
 }
 
@@ -355,12 +355,6 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-}
-.footer-logo {
-  max-width: 150px;
-  width: 100%;
-  height: auto;
-  margin-bottom: 15px;
 }
 
 .social-links {
