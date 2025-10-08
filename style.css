@@ -221,7 +221,7 @@ footer {
 
 /* Biography Section */
 .bio {
-  max-width: 800px;       /* limits width for readability */
+  max-width: 400px;       /* limits width for readability */
   margin: 0 auto;         /* centers the section */
   padding: 20px;          /* spacing around the text */
   font-family: 'Poppins', sans-serif;
