@@ -389,3 +389,17 @@ footer {
     height: 25px;
   }
 }
+
+.social-icon {
+  width: 30px;          /* same width for both icons */
+  height: 30px;         /* same height for both */
+  object-fit: contain;  /* keeps logo proportion correct */
+  vertical-align: middle;
+  margin: 0 5px;        /* small space between them */
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* nice hover effect */
+}
+
