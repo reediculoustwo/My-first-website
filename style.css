@@ -346,6 +346,21 @@ footer {
 .bio.reverse {
   flex-direction: row-reverse; /* flips image to the right */
 }
+
+/* Make sure body takes full height for spacing */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content expands to push footer down */
+main {
+  flex: 1;
+}
+
   /* Footer Styling */
 .footer {
   background: #974418;
@@ -355,6 +370,15 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+/* Optional responsive layout for icons */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .social-links {
