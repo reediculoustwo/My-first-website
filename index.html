@@ -1,96 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reed’iculous Two</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <div class="header-container">
-      <img src="images/Reediculoustwologo.JPG" alt="Reediculoustwo logo" class="logo">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/Reediculoustwologo.JPG" alt="Reed’iculous Two logo" class="logo">
+        <div class="brand-text">
+          <h1 class="site-title">Reed’iculous Two</h1>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biography.html">Who We Are</a></li>
+          <li><a href="workshops.html">School Workshop</a></li>
+          <li><a href="lessons.html">Lessons</a></li>
+          <li><a href="enquiries.html">Reed Enquiries</a></li>
+          <li><a href="performances.html">Performances</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="who we are.html">who we are</a></li>
-        <li><a href="lessons.html">Lessons</a></li>
-        <li><a href="workshops.html">School Workshop</a></li>
-        <li><a href="enquiries.html">Reed Enquiries</a></li>
-        <li><a href="performances.html">Performances</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-   </div>
   </header>
-</body>
-</html>
 
- <!-- HERO -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-text">
-      <h2>Double the Reeds, Double the Laughs!</h2>
-      <p>Welcome to the Reed’iculous Two — a duo of oboe and bassoon players bringing music, fun, and creativity to audiences of all ages.</p>
-    </div>
-    <div class="hero-photo">
-      <img src="images/hero-photo.jpg" alt="Reed’iculous Two performing">
-    </div>
-  </section>
-
-  <!-- CONTENT BOX 1 -->
-  <section class="alt-box left">
-    <img src="images/photo1.jpg" alt="Our Mission">
-    <div class="text">
-      <h3>Our Mission, You Ask?</h3>
-      <p>To show the world just how expressive and hilariously fun these instruments can be to listen to, and play. We share a love for creativity, humour, and pushing the boundaries of classical music because we believe it should be enjoyed by everyone! That’s why our performances mix music and comedy to create concerts that are lively, approachable, and full of character.</p>
-      <a href="biography.html" class="btn">Who We Are</a>
-    </div>
-  </section>
-
-  <!-- CONTENT BOX 2 -->
-  <section class="alt-box right">
-    <div class="text">
-      <h3>But Performing is Only a Small Part...</h3>
-      <p>We are also passionate teachers, using our performances to demonstrate our instruments’ abilities and encourage audiences to discover the joy of making music.</p>
-      <a href="workshops.html" class="btn">School Workshop</a>
-    </div>
-    <img src="images/photo2.jpg" alt="Teaching and Workshops">
-  </section>
-
-  <!-- CONTENT BOX 3 -->
-  <section class="alt-box left">
-    <img src="images/photo3.jpg" alt="Our Service">
-    <div class="text">
-      <h3>Our Service</h3>
-      <p>If you are a double-reed player yourself, you will find info here about 1-to-1 lessons, reed-making help, and mentoring opportunities for musicians of all ages.</p>
-      <div class="multi-links">
-        <a href="lessons.html" class="btn">Lessons</a>
-        <a href="enquiries.html" class="btn">Reed Enquiries</a>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>Double the Reeds, <br><span class="accent">Double the Laughs!</span></h2>
+        <p class="lead">Welcome to the Reed’iculous Two — a duo of oboe and bassoon players bringing music, fun, and creativity to audiences of all ages.</p>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-photo.jpg" alt="Reed’iculous Two performing">
       </div>
     </div>
   </section>
 
-  <!-- CONTENT BOX 4 -->
-  <section class="alt-box right">
-    <div class="text">
-      <h3>Join Our Mission</h3>
-      <p>So have a look around, get to know us, and join our mission to make the world a little bit more Reed’iculous!!</p>
-      <div class="multi-links">
-        <a href="performances.html" class="btn">Performances</a>
-        <a href="contact.html" class="btn">Contact Us</a>
+  <!-- CENTERED INTRO (card overlapping hero bottom) -->
+  <section class="intro-card">
+    <div class="container">
+      <div class="intro-inner">
+        <p>We are a pair of double-reed musicians playing oboe and bassoon. Our mission is to show how expressive (and hilariously fun) these instruments can be — using music, storytelling and comedy to create lively, approachable concerts and memorable workshops for children, families and schools.</p>
       </div>
     </div>
-    <img src="images/photo4.jpg" alt="Join Us">
   </section>
 
+  <!-- FOUR ALTERNATING BOXES -->
+  <main>
+    <div class="container alt-list">
 
+      <!-- BOX 1 (left image) -->
+      <article class="alt-row">
+        <div class="alt-image">
+          <img src="images/photo1.jpg" alt="Our Mission">
+        </div>
+        <div class="alt-text">
+          <h3>Our mission, you ask?</h3>
+          <p>To show the world just how expressive and hilariously fun these instruments can be to listen to, and play. We share a love for creativity, humour, and pushing the boundaries of classical music because we believe it should be enjoyed by everyone! That’s why our performances mix music and comedy to create concerts that are lively, approachable, and full of character.</p>
+          <p><a class="btn" href="biography.html">Who We Are</a></p>
+        </div>
+      </article>
 
+      <!-- BOX 2 (right image) -->
+      <article class="alt-row alt-row--reverse">
+        <div class="alt-image">
+          <img src="images/photo2.jpg" alt="Teaching and Workshops">
+        </div>
+        <div class="alt-text">
+          <h3>But performing is only a small part of what we do…</h3>
+          <p>We are also passionate teachers, using our performances to demonstrate our instruments’ abilities and encourage audiences to discover the joy of making music.</p>
+          <p><a class="btn" href="workshops.html">School Workshop</a></p>
+        </div>
+      </article>
 
+      <!-- BOX 3 (left image) -->
+      <article class="alt-row">
+        <div class="alt-image">
+          <img src="images/photo3.jpg" alt="Lessons and Reed-making">
+        </div>
+        <div class="alt-text">
+          <h3>Our service</h3>
+          <p>If you are a double-reed player yourself, you will find info here about 1-to-1 lessons, reed-making help and mentoring opportunities for musicians of all ages.</p>
+          <p><a class="btn" href="lessons.html">Lessons</a> <a class="btn btn-ghost" href="enquiries.html">Reed Enquiries</a></p>
+        </div>
+      </article>
 
+      <!-- BOX 4 (right image) -->
+      <article class="alt-row alt-row--reverse">
+        <div class="alt-image">
+          <img src="images/photo4.jpg" alt="Join Us">
+        </div>
+        <div class="alt-text">
+          <h3>Join our mission</h3>
+          <p>So have a look around, get to know us, and join our mission to make the world a little bit more Reed’iculous!</p>
+          <p><a class="btn" href="performances.html">Performances</a> <a class="btn btn-ghost" href="contact.html">Contact Us</a></p>
+        </div>
+      </article>
 
-<footer>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+ <footer>
   <footer class="footer">
   <div class="footer-container">
    
@@ -105,6 +130,8 @@
     </div>
   <p>&copy; 2025 Reediculoustwo. All rights reserved.</p>
 </footer>
+
+
 
 </body>
 </html>
