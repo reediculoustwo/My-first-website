@@ -511,13 +511,7 @@ main {
 
 /* Responsive for small screens */
 @media (max-width: 480px) {
-  .social-icon {
-    width: 25px;
-    height: 25px;
-  
-}
-
-.social-icon {
+ .social-icon {
   width: 10px;          /* same width for both icons */
   height: 10px;         /* same height for both */
   object-fit: contain;  /* keeps logo proportion correct */
