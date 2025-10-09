@@ -518,8 +518,8 @@ main {
 }
 
 .social-icon {
-  width: 30px;          /* same width for both icons */
-  height: 30px;         /* same height for both */
+  width: 10px;          /* same width for both icons */
+  height: 10px;         /* same height for both */
   object-fit: contain;  /* keeps logo proportion correct */
   vertical-align: middle;
   margin: 0 5px;        /* small space between them */
