@@ -1,11 +1,11 @@
 '/* Global styles */
 body {
   font-family: "Poppins", Arial, sans-serif;
+  background-colour: #fadfb4;
   margin: 0;
-  background-color: #fadfb4; /* your chosen tone */
-  color: #2d2d2d;
-  line-height: 1.6;
+  colour: #333;
 }
+  
 
 * Make body take full height and stack elements vertically */
 html, body {
@@ -22,13 +22,13 @@ main {
 
 /* Header */
 header {
-  background-color: #fadfb4;
+  background-color: #fff;
+  border-bottom: 3px solid #b17457;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 
 .header-container {
   display: flex;
@@ -39,9 +39,16 @@ header {
   margin: 20px 0;
 }
 
-
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+  
 .logo {
-  height: 400px; /* adjust size */
+  height: 400px;
+  width: auto;
+  border-radius: 50%/* adjust size */
 }
 
 * Logo text styling */
@@ -85,6 +92,98 @@ nav a:hover {
   color: #974418; /* hover matches the logo accent */
 }
 
+  /* Hero section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background: #fff8ec;
+  gap: 2rem;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  color: #b17457;
+  font-size: 2.4rem;
+}
+
+.hero-photo img {
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Alternating content boxes */
+.alt-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.alt-box.left {
+  background: #fff8ec;
+}
+
+.alt-box.right {
+  background: #fff;
+  flex-direction: row-reverse;
+}
+
+.alt-box img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.alt-box .text {
+  max-width: 500px;
+}
+
+.alt-box h3 {
+  color: #b17457;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #dba15d;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #b17457;
+}
+
+.multi-links .btn {
+  margin-right: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+  
 <link rel="stylesheet" href="style.css">
 /* General Reset */
 * {
@@ -345,14 +444,7 @@ nav a:hover {
   text-align: center;
 }
 
-/* Footer */
-footer {
-  background-color: #fadfb4
-  color: #974418;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
+
 .bio article {
   flex: 1; /* text takes up remaining space */
 }
