@@ -322,10 +322,11 @@ nav ul {
 }
 
 /***********************
- RESPONSIVE DESIGN
+ RESPONSIVE DESIGN tablet 
 ************************/
 @media (max-width: 900px) {
-  .bio, .bio-reverse {
+  .bio,
+  .bio-reverse {
     flex-direction: column;
     text-align: center;
     padding: 1.5rem;
@@ -333,7 +334,7 @@ nav ul {
 
   .bio img {
     width: 70%;
-    max-width: 250px;
+    max-width: 280px;
     margin-bottom: 1.5rem;
   }
 
@@ -346,40 +347,34 @@ nav ul {
   }
 }
 
+/*phones*/
+
 @media (max-width: 480px) {
+  .biography {
+    padding: 2rem 1rem;
+  }
+
+  .bio {
+    padding: 1.2rem;
+  }
+
   .bio img {
     width: 100%;
-    max-width: 200px;
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 1rem;
   }
 
   .bio-text h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .bio-text p {
-    font-size: 1rem;
+    font-size: 1.05rem; /* slightly larger for readability */
+    line-height: 1.6;
   }
 }
 
-
-
-/* Responsive for smaller screens */
-@media (max-width: 768px) {
-  .bio {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-  .bio img {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 1rem;
-}
-
-  .bio-text {
-    text-align: justify;
-}
 
 /* General Reset */
 * {
@@ -435,12 +430,6 @@ nav a:hover {
   text-align: center;
 }
 
-
-.bio article {
-  flex: 1; /* text takes up remaining space */
-}
-
-/* Make sure body takes full height for spacing */
 
 
 /* Main content expands to push footer down */
