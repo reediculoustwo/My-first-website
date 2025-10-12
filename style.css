@@ -1,19 +1,12 @@
 '/* Global styles */
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   background-color: #fadfb4;
-  margin: 0;
   color: #333;
+  margin: 0;
+  line-height: 1.6;
 }
   
-
-* Make body take full height and stack elements vertically */
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
 
 /* Main content expands to push footer down */
 main {
@@ -200,26 +193,10 @@ footer {
 }
 
 /* Body Styling */
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background-color: #fadfb4;
-  color: #333;
-}
+
 
 /* Header Styling */
-header {
-  background: #222;
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-header .logo img {
-  width: 100px;
-}
 
 nav ul {
   list-style: none;
@@ -227,26 +204,11 @@ nav ul {
   gap: 1rem;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
 
 /* Hero Section */
-.hero {
-  height: 60vh;
-  background-image: url("images/photo.jpg"); /* replace with your own image */
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
+
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   position: absolute;
   top: 0;
@@ -286,48 +248,8 @@ nav a:hover {
 }
 
 /* Main Sections */
-.intro {
-  text-align: center;
-  padding: 3rem 2rem;
-  background-color: #fff8ec;
-}
 
-.highlights {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
 
-.highlight {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 300px;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.highlight h3 {
-  color: #b17457;
-}
-
-.btn-secondary {
-  display: inline-block;
-  margin-top: 1rem;
-  background-color: #fff8ec;
-  color: #b17457;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn-secondary:hover {
-  background-color: #b17457;
-  color: white;
-}
 
 
 /* Biography Section */
@@ -340,62 +262,106 @@ nav a:hover {
   color: #333;
 }
 
-/* Bio Container */
+/***********************
+ WHO WE ARE PAGE
+************************/
+.biography {
+  background-color: #fadfd4;
+  padding: 4rem 2rem;
+}
+
+.biography .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual bio cards */
 .bio {
   display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin: 2.5rem 0;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
-/* Reverse layout for alternating look */
+/* Alternate layout for the second bio */
 .bio-reverse {
-  flex-direction: row-reverse;  /* flips image to the right */
+  flex-direction: row-reverse;
 }
 
-/* Bio Image */
+/* Bio images */
 .bio img {
-  width: 230px;
+  width: 280px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Bio Text */
+/* Bio text */
 .bio-text {
   flex: 1;
-  text-align: justify;
-  line-height: 1.7;
-  font-size: 1.1rem;
 }
 
-/* Heading inside bio text */
-.bio-text h3 {
-  margin-bottom: 0.75rem;
-  color: #b17457; /* matches your brand accent */
+.bio-text h2 {
   font-family: "Playfair Display", serif;
-  font-size: 1.6rem;
-  text-align: left;
+  color: #b17457;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
-/* Responsive: stack vertically on small screens */
-@media (max-width: 768px) {
+.bio-text p {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/***********************
+ RESPONSIVE DESIGN
+************************/
+@media (max-width: 900px) {
   .bio, .bio-reverse {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .bio img {
+    width: 70%;
+    max-width: 250px;
+    margin-bottom: 1.5rem;
+  }
+
+  .bio-text {
     text-align: center;
   }
 
-  .bio img, .bio-reverse img {
-    margin-bottom: 1rem;
-  }
-
-  .bio-text h3 {
-    text-align: center;
+  .bio-text p {
+    text-align: justify;
   }
 }
+
+@media (max-width: 480px) {
+  .bio img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .bio-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .bio-text p {
+    font-size: 1rem;
+  }
+}
+
+
 
 /* Responsive for smaller screens */
 @media (max-width: 768px) {
@@ -463,7 +429,7 @@ nav a:hover {
 
 /* Hero Section (if used) */
 .hero {
-  background-color: #ff6f61; /* coral accent */
+  background-color: #ab0f00; /* coral accent */
   color: #ffffff;
   padding: 3rem 1rem;
   text-align: center;
@@ -473,18 +439,9 @@ nav a:hover {
 .bio article {
   flex: 1; /* text takes up remaining space */
 }
-.bio.reverse {
-  flex-direction: row-reverse; /* flips image to the right */
-}
 
 /* Make sure body takes full height for spacing */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
+
 
 /* Main content expands to push footer down */
 main {
@@ -492,13 +449,7 @@ main {
 }
 
   /* Footer Styling */
-.footer {
-  background: #974418;
-  color: #fadfb4;
-  text-align: center;
-  padding: 1rem;
-  width: 100%;
-}
+
 
 /* Optional responsive layout for icons */
 .footer-container {
