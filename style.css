@@ -257,7 +257,7 @@ nav ul {
 }
 
 .biography .container {
-  max-width: 300px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -267,7 +267,7 @@ nav ul {
   align-items: center;
   gap: 3rem;
   margin-bottom: 4rem;
-  background: #fadfd4;
+  background: #ffffff;
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 6px 12px rgba(0,0,0,0.08);
@@ -276,13 +276,13 @@ nav ul {
 /* Alternate layout for the second bio */
 .bio-reverse {
   flex-direction: row-reverse;
-  background: #fadfd4
+  background: #ffffff
 }
 
 /* Bio images */
 .bio img {
-  width: 250px;              /* fixed display width */
-  height: 250px;             /* fixed display height */
+  width: 280px;              /* fixed display width */
+  height: 280px;             /* fixed display height */
   object-fit: cover;         /* ensures even cropping */
   object-position: center;   /* centers the face/subject */
   border-radius: 10px;
@@ -323,6 +323,7 @@ nav ul {
   .bio img {
     width: 70%;
     max-width: 280px;
+    height:250px;
     margin-bottom: 1.5rem;
   }
 
