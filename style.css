@@ -267,7 +267,7 @@ nav ul {
   align-items: center;
   gap: 3rem;
   margin-bottom: 4rem;
-  background: #fff;
+  background: #fadfd4;
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 6px 12px rgba(0,0,0,0.08);
@@ -276,6 +276,7 @@ nav ul {
 /* Alternate layout for the second bio */
 .bio-reverse {
   flex-direction: row-reverse;
+  background: #fadfd4
 }
 
 /* Bio images */
