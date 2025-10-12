@@ -280,11 +280,12 @@ nav ul {
 
 /* Bio images */
 .bio img {
-  width: 280px;
-  height: 320px;
+  width: 250px;              /* fixed display width */
+  height: 250px;             /* fixed display height */
+  object-fit: cover;         /* ensures even cropping */
+  object-position: center;   /* centers the face/subject */
   border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Bio text */
