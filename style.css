@@ -247,20 +247,6 @@ nav ul {
   background-color: #8e5b3e;
 }
 
-/* Main Sections */
-
-
-
-
-/* Biography Section */
-.biography p {
-  text-align: justify;       /* aligns both left and right edges */
-  text-align-last: left;     /* makes last line align left */
-  line-height: 1.7;          /* comfortable line spacing */
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
 
 /***********************
  WHO WE ARE PAGE
