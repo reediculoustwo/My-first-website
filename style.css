@@ -331,43 +331,70 @@ nav a:hover {
 
 
 /* Biography Section */
-
 .biography p {
-  text-align: justify;    /* aligns both left and right edges */
-  text-align-last: left; 
-  line-height: 1.6;       /* spacing between lines for readability */
-  font-size: 1.1rem; 
-  margin-bottom: 1rem;/* comfortable reading size */
+  text-align: justify;       /* aligns both left and right edges */
+  text-align-last: left;     /* makes last line align left */
+  line-height: 1.7;          /* comfortable line spacing */
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
 }
 
-/* Bio Container (each person’s section) */
+/* Bio Container */
 .bio {
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;            /* ensures it stacks nicely on smaller screens */
+  gap: 2rem;
+  margin: 2.5rem 0;
+  flex-wrap: wrap;
 }
 
+/* Reverse layout for alternating look */
+.bio-reverse {
+  flex-direction: row-reverse;  /* flips image to the right */
+}
+
+/* Bio Image */
 .bio img {
-  width: 200px;
+  width: 230px;
   height: auto;
   border-radius: 8px;
-  object-fit: contain;
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Bio Text */
 .bio-text {
   flex: 1;
   text-align: justify;
-  line-height: 1.6;
+  line-height: 1.7;
   font-size: 1.1rem;
 }
 
-/* Bio Text Heading */
+/* Heading inside bio text */
 .bio-text h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: #b17457; /* matches your brand accent */
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
   text-align: left;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .bio, .bio-reverse {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bio img, .bio-reverse img {
+    margin-bottom: 1rem;
+  }
+
+  .bio-text h3 {
+    text-align: center;
+  }
 }
 
 /* Responsive for smaller screens */
