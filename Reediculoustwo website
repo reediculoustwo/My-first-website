@@ -1,7 +1,7 @@
 This is the official website for Reediculoustwo, showcasing our biography, school workshops, performances, and contact information. The site is built with HTML, CSS, and optional JavaScript for interactivity.
 / (root)
  ├── index.html         ← Home page
- ├── biography.html     ← Biography
+ ├── who we are.html     ← Biography
  ├── teaching.html      ← Lessons 
  ├── workshops.html     ← School workshop
  ├── enquiries.html     ← Reed enquiries
