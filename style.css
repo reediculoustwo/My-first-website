@@ -359,9 +359,8 @@ nav ul {
   }
 
   .bio img {
-    width: 100%;
     max-width: 220px;
-    height: auto;
+    height: 250;
     margin-bottom: 1rem;
   }
 
