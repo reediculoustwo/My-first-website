@@ -35,7 +35,7 @@ main {
 
 .logo {
   height: auto;             /* maintain aspect ratio */
-  width: 180px;             /* or whatever max width you want */
+  width: 200px;             /* or whatever max width you want */
   max-width: 100%;          /* prevents overflow on small screens */
   border-radius: 50%;       /* makes it circular */
   display: inline-block;    /* allows centering */
@@ -44,7 +44,7 @@ main {
 /* Brand (logo + title) */
 .brand {
   text-align: center; /* stack logo + title */
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 
