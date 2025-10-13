@@ -30,7 +30,7 @@ main {
   text-align: center;   /* center everything inside */
   padding: 2rem 0;      /* spacing above and below logo */
   background-color: #fadfb4; /* optional: same cream background */
-
+}
 
 /* Brand (logo + title) */
 .brand {
@@ -39,11 +39,11 @@ main {
 }
 
 .logo {
-  height: 180px;
-  width: 180px;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 auto; 
+  height: auto;             /* maintain aspect ratio */
+  width: 180px;             /* or whatever max width you want */
+  max-width: 100%;          /* prevents overflow on small screens */
+  border-radius: 50%;       /* makes it circular */
+  display: inline-block;    /* allows centering */
 }
 
 /* Title under logo */
