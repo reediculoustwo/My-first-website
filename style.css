@@ -284,8 +284,8 @@ nav ul {
 .bio img {
   width: 280px;              /* fixed display width */
   height: 280px;             /* fixed display height */
-  object-fit: cover;         /* ensures even cropping */
-  object-position: center;   /* centers the face/subject */
+  object-fit: contain;         /* ensures even cropping */
+  object-position: top;   /* centers the face/subject */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
