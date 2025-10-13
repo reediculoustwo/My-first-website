@@ -45,7 +45,7 @@ main {
   height: 180px;
   width: auto;
   border-radius: 50%;
-  margin-bottom: 0.5rem;
+  margin: 0 auto; 
 }
 
 /* Title under logo */
