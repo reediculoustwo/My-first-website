@@ -32,11 +32,6 @@ main {
   background-color: #fadfb4; /* optional: same cream background */
 }
 
-/* Brand (logo + title) */
-.brand {
-  text-align: center; /* stack logo + title */
-  margin-bottom: 0.5rem;
-}
 
 .logo {
   height: auto;             /* maintain aspect ratio */
@@ -45,6 +40,13 @@ main {
   border-radius: 50%;       /* makes it circular */
   display: inline-block;    /* allows centering */
 }
+
+/* Brand (logo + title) */
+.brand {
+  text-align: center; /* stack logo + title */
+  margin-bottom: 0.5rem;
+}
+
 
 /* Title under logo */
 .site-title {
