@@ -41,11 +41,6 @@ main {
   display: inline-block;    /* allows centering */
 }
 
-/* Brand (logo + title) */
-.brand {
-  text-align: center; /* stack logo + title */
-  margin-bottom: 1.5rem;
-}
 
 
 /* Title under logo */
