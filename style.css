@@ -27,20 +27,21 @@ main {
 
 /* Logo container */
 .logo-container {
-  text-align: center;   /* center everything inside */
-  padding: 2rem 0;      /* spacing above and below logo */
-  background-color: #fadfb4; /* optional: same cream background */
+  display: flex;            /* makes it a flex container */
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* vertically center if container grows */
+  padding: 2rem 0;          /* space above/below logo */
+  background-color: #fadfb4; /* optional cream background */
+  width: 100%;              /* full width of page */
+  position: relative;       /* default stacking context */
+  z-index: 10;              /* ensures it sits above other elements if needed */
 }
-
 
 .logo {
+  width: 180px;             /* fixed width */
   height: auto;             /* maintain aspect ratio */
-  width: 200px;             /* or whatever max width you want */
-  max-width: 100%;          /* prevents overflow on small screens */
-  border-radius: 50%;       /* makes it circular */
-  display: inline-block;    /* allows centering */
+  border-radius: 50%;       /* make it circular */
 }
-
 
 
 /* Title under logo */
@@ -51,6 +52,10 @@ main {
   margin: 0.5rem 0 0;
   text-align: center;
 }
+
+
+
+
 
 /* Navigation bar centered */
 .main-nav ul {
