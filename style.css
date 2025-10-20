@@ -38,7 +38,7 @@ main {
 
 /* Logo image */
 .logo {
-  width: 160px;            /* adjust as needed */
+  width: 220px;            /* adjust as needed */
   height: auto;
   border-radius: 50%;      /* makes circular logo */
   display: block;
