@@ -38,8 +38,8 @@ main {
 
 /* Logo image */
 .logo {
-  width: 280px !important;   /* force larger display */
-  height: auto !important;
+  width: 280px;   /* force larger display */
+  height: auto;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
