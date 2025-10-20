@@ -20,7 +20,7 @@ main {
   background-color: #fadfb4;
   padding: 2rem 0 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative; /* 'center' isn’t a valid value */
+  position: relative; 
   z-index: 100;
   text-align: center; /* ensures all child elements are centered */
 }
