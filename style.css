@@ -41,6 +41,7 @@ main {
   width: 180px;             /* fixed width */
   height: auto;             /* maintain aspect ratio */
   border-radius: 50%;       /* make it circular */
+  align-item: center; 
 }
 
 
