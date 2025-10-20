@@ -33,7 +33,7 @@ main {
   padding: 2rem 0;          /* space above/below logo */
   background-color: #fadfb4; /* optional cream background */
   width: 100%;              /* full width of page */
-  position: relative;       /* default stacking context */
+  position: center;       /* default stacking context */
   z-index: 10;              /* ensures it sits above other elements if needed */
 }
 
