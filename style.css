@@ -38,11 +38,12 @@ main {
 
 /* Logo image */
 .logo {
-  width: 240px;            /* adjust as needed */
-  height: auto;
-  border-radius: 50%;      /* makes circular logo */
+  width: 280px !important;   /* force larger display */
+  height: auto !important;
+  border-radius: 50%;
   display: block;
-  margin: 0 auto;          /* center horizontally */
+  margin: 0 auto;
+  max-width: none;           /* prevents scaling down by parent */
 }
 
 /* Title under logo */
