@@ -22,7 +22,10 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative; 
   z-index: 100;
-  text-align: center; /* ensures all child elements are centered */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Logo container */
@@ -31,9 +34,6 @@ main {
   flex-direction: column;   /* stack logo and title vertically */
   align-items: center;      /* center horizontally */
   justify-content: center;  /* center vertically (if needed) */
-  width: 100%;
-  background-color: #fadfb4;
-  padding-bottom: 0.5rem;
 }
 
 /* Logo image */
@@ -41,9 +41,7 @@ main {
   width: 280px;   /* force larger display */
   height: auto;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  max-width: none;           /* prevents scaling down by parent */
+     /* prevents scaling down by parent */
 }
 
 /* Title under logo */
@@ -55,6 +53,9 @@ main {
   text-align: center;
 }
 
+.logo-container {
+  margin-bottom: 1.5rem;
+}
 
 
 
