@@ -87,41 +87,49 @@
     <p>&copy; 2024 Reed’iculous Two. All rights reserved.</p>
   </footer>
 
-  <!-- ========= JavaScript (place right before </body>) ========= -->
-  <script>
-    const form = document.getElementById('contactForm');
-    const status = document.getElementById('form-status');
+ <script>
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('form-status');
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const data = new FormData(form);
-      const submitBtn = form.querySelector('.btn-submit');
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending...';
+  // ✅ Use your real Google Apps Script web‑app URL
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx62Zv6Ak-O61nneVg4O34PbrXmWaZ-3Q8BwigjuTKNnYCifsYBkJYPvRBNkLf8Sige/exec';
 
-      try {
-        const response = await fetch(form.action, {
-          method: form.method,
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const submitBtn = form.querySelector('.btn-submit');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
 
-        if (response.ok) {
-          form.reset();
-          status.textContent = "✅ Thank you for your enquiry! We’ll be in touch as soon as possible.";
-          status.classList.add('success');
-        } else {
-          throw new Error('Network response was not ok.');
-        }
-      } catch (error) {
-        status.textContent = "❌ Oops! Something went wrong. Please try again later.";
-        status.classList.add('error');
-      } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Submit Enquiry';
+    const formData = {
+      'First Name': document.getElementById('fname').value,
+      'Last Name': document.getElementById('lname').value,
+      'Contact Number': document.getElementById('contact').value,
+      'Years of Learning': document.getElementById('experience').value,
+      'Enquiry Reason': document.getElementById('reason').value,
+    };
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: 'POST',
+        contentType: 'application/json',
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        form.reset();
+        status.textContent = "✅ Thank you for your enquiry! We’ll be in touch as soon as possible.";
+        status.classList.add('success');
+      } else {
+        throw new Error('Server error');
       }
-    });
-  </script>
-</body>
-</html>
+    } catch (error) {
+      status.textContent = "❌ Oops! Something went wrong. Please try again later.";
+      status.classList.add('error');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit Enquiry';
+    }
+  });
+</script>
 
+  
