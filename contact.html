@@ -1,46 +1,127 @@
-<section class="contact-section">
-  <div class="contact-content">
-    <h2>Contact Us for Lessons or Chamber Coaching</h2>
-    <p>
-      Charis and Thais both offer private lessons, chamber music coaching, accompanying,
-      and reed mentoring advice. Feel free to contact us at
-      <a href="mailto:Reediculoustwo@gmail.com"><strong>Reediculoustwo@gmail.com</strong></a>.
-    </p>
-    <p>Please complete the enquiry form below — we’d love to hear from you!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Reed’iculous Two</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <form class="enquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="First Name" placeholder="First name" required>
+<body>
+  <!-- ========= Header (reuse your same header HTML here) ========= -->
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Reed’iculous Two logo" class="logo">
+      <h1 class="site-title">Reed’iculous Two</h1>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="who%20we%20are.html">Who We Are</a></li>
+        <li><a href="school-workshop.html">School Workshop</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="performances.html">Performances</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========= Contact Form Section ========= -->
+  <section class="contact-section">
+    <div class="contact-content">
+      <h2>Contact Us for Lessons or Chamber Coaching</h2>
+      <p>
+        Charis and Thais both offer private lessons, chamber music coaching, accompanying,
+        and reed mentoring advice. Feel free to contact us at 
+        <a href="mailto:Reediculoustwo@gmail.com"><strong>Reediculoustwo@gmail.com</strong></a>.
+      </p>
+      <p>Please complete the enquiry form below — we’d love to hear from you!</p>
+
+      <form 
+        class="enquiry-form" 
+        action="https://formspree.io/f/YOUR_FORM_ID" 
+        method="POST" 
+        id="contactForm"
+      >
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="First Name" placeholder="First name" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="Last Name" placeholder="Last name">
+          </div>
         </div>
+
         <div class="form-group">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="Last Name" placeholder="Last name">
+          <label for="contact">Contact Number</label>
+          <input type="tel" id="contact" name="Contact Number" placeholder="Your phone number">
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="contact">Contact Number</label>
-        <input type="tel" id="contact" name="Contact Number" placeholder="Your phone number">
-      </div>
+        <div class="form-group">
+          <label for="experience">Years of Learning the Instrument</label>
+          <input type="number" id="experience" name="Years of Learning" min="0" max="80" placeholder="e.g. 4">
+        </div>
 
-      <div class="form-group">
-        <label for="experience">Years of Learning the Instrument</label>
-        <input type="number" id="experience" name="Years of Learning" min="0" max="80" placeholder="e.g. 4">
-      </div>
+        <div class="form-group">
+          <label for="reason">Enquiry Reason</label>
+          <textarea id="reason" name="Enquiry Reason" rows="5" placeholder="Tell us more..." required></textarea>
+        </div>
 
-      <div class="form-group">
-        <label for="reason">Enquiry Reason</label>
-        <textarea id="reason" name="Enquiry Reason" rows="5" placeholder="Tell us more..." required></textarea>
-      </div>
+        <button type="submit" class="btn-submit">Submit Enquiry</button>
 
-      <button type="submit" class="btn-submit">Submit Enquiry</button>
-    </form>
+        <!-- Message area -->
+        <p id="form-status" class="form-status"></p>
+      </form>
 
-    <p class="thanks-note">
-      We’ll do our best to reply to your enquiry as soon as possible — thank you for getting in touch!
-    </p>
-  </div>
-</section>
+      <p class="thanks-note">
+        We’ll do our best to reply to your enquiry as soon as possible — thank you for getting in touch!
+      </p>
+    </div>
+  </section>
+
+  <!-- ========= Footer ========= -->
+  <footer>
+    <p>&copy; 2024 Reed’iculous Two. All rights reserved.</p>
+  </footer>
+
+  <!-- ========= JavaScript (place right before </body>) ========= -->
+  <script>
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const submitBtn = form.querySelector('.btn-submit');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          form.reset();
+          status.textContent = "✅ Thank you for your enquiry! We’ll be in touch as soon as possible.";
+          status.classList.add('success');
+        } else {
+          throw new Error('Network response was not ok.');
+        }
+      } catch (error) {
+        status.textContent = "❌ Oops! Something went wrong. Please try again later.";
+        status.classList.add('error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit Enquiry';
+      }
+    });
+  </script>
+</body>
+</html>
 
