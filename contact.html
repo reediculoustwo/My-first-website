@@ -100,9 +100,11 @@
     submitBtn.textContent = 'Sending...';
 
     const formData = {
+     const formData = {
       'First Name': document.getElementById('fname').value,
       'Last Name': document.getElementById('lname').value,
-      'Contact Number': document.getElementById('contact').value,
+      'Contact Number and Email': document.getElementById('contact').value, // Matches the script
+      'Type of Enquiry': document.getElementById('enquiry-type').value,      // Matches the script
       'Years of Learning': document.getElementById('experience').value,
       'Enquiry Reason': document.getElementById('reason').value,
     };
