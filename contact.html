@@ -93,51 +93,48 @@
   </footer>
 
  <script>
-  const form = document.getElementById('contactForm');
-  const status = document.getElementById('form-status');
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('form-status');
 
-  // ✅ Use your real Google Apps Script web‑app URL
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbx3j2byW1bWVN43Y3cg4NwIaXh9YgemBPrG68j2hRKWpv5xpGGrFy7J-9662-FqQCF5/exec';
+  // Double check this URL is your LATEST 'Anyone' deployment
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxlioavBQHBAJAEunuhvq-hyHbq7-ulOwZE5mXXXfX675tY6eLNP6c4bOzr9upCtdSc/exec';
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const submitBtn = form.querySelector('.btn-submit');
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending...';
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const submitBtn = form.querySelector('.btn-submit');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
 
-    const formData = {
-      'First Name': document.getElementById('fname').value,
-      'Last Name': document.getElementById('lname').value,
-      'Contact Number and Email': document.getElementById('contact').value,
-      'Type of Enquiry': document.getElementById('enquiry-type').value,
-      'Years of Learning': document.getElementById('experience').value,
-      'Enquiry Reason': document.getElementById('reason').value,
-    };
+    // Prepare the data
+    const formData = new FormData();
+    formData.append('First Name', document.getElementById('fname').value);
+    formData.append('Last Name', document.getElementById('lname').value);
+    formData.append('Contact Number and Email', document.getElementById('contact').value);
+    formData.append('Type of Enquiry', document.getElementById('enquiry-type').value);
+    formData.append('Years of Learning', document.getElementById('experience').value);
+    formData.append('Enquiry Reason', document.getElementById('reason').value);
 
-    try {
-      const response = await fetch(scriptURL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData)
-});
-
-
-      form.reset();
-      status.textContent = "✅ Thank you for your enquiry! We’ll be in touch as soon as possible.";
-      status.className = 'form-status success'; // Use className to apply styles
+    // Using the 'fetch' method with 'no-cors' specifically for Apps Script
+    fetch(scriptURL, { 
+      method: 'POST', 
+      body: formData,
+      mode: 'no-cors' 
+    })
+    .then(() => {
+      // Because of 'no-cors', we won't get a 'success' message back, 
+      // but if the code reaches here without a 'catch', it sent!
+      form.reset();
+      status.textContent = "✅ Thank you! Your enquiry has been sent.";
       status.style.color = "green";
-
-    } catch (error) {
-      console.error('Submission Error:', error);
-      status.textContent = "❌ Oops! Something went wrong. Please try again later.";
-      status.className = 'form-status error';
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      status.textContent = "❌ Oops! Something went wrong. Please try again.";
       status.style.color = "red";
-    } finally {
+    })
+    .finally(() => {
       submitBtn.disabled = false;
       submitBtn.textContent = 'Submit Enquiry';
-    }
+    });
   });
 </script>
-
-  
