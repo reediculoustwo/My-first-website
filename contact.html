@@ -116,27 +116,28 @@
 
     try {
       const response = await fetch(scriptURL, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(formData)
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
 });
 
 
-      if (response.ok) {
-        form.reset();
-        status.textContent = "✅ Thank you for your enquiry! We’ll be in touch as soon as possible.";
-        status.classList.add('success');
-      } else {
-        throw new Error('Server error');
-      }
-    } catch (error) {
-      status.textContent = "❌ Oops! Something went wrong. Please try again later.";
-      status.classList.add('error');
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Submit Enquiry';
-    }
-  });
+      form.reset();
+      status.textContent = "✅ Thank you for your enquiry! We’ll be in touch as soon as possible.";
+      status.className = 'form-status success'; // Use className to apply styles
+      status.style.color = "green";
+
+    } catch (error) {
+      console.error('Submission Error:', error);
+      status.textContent = "❌ Oops! Something went wrong. Please try again later.";
+      status.className = 'form-status error';
+      status.style.color = "red";
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit Enquiry';
+    }
+  });
 </script>
 
   
