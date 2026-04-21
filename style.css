@@ -289,12 +289,12 @@ nav ul {
 
 /* Styling for the Title Banner */ .hero-banner { background-color: #fadfd4; padding: 40px 0; text-align: center; width: 100%; }
 
-.hero-banner h1 { color: #ffffff; font-size: 2.5rem; margin: 0; font-family: Arial, sans-serif; }
-
-/* The Photo itself */ .main-photo { width: 100%; max-width: 1200px; height: auto; display: block; }
-.hero-banner-photo { /* This points to your photo */ background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/whowearebanner.jpg');
+.hero-banner { /* This uses your background color as a fallback */ background-color: #fadfd4;
 
 }
+
+.hero-banner h1 { color: #ffffff; font-size: 2.5rem; margin: 0; font-family: Arial, sans-serif; text-transform: uppercase; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); }
+
 
 .banner-text h1 { color: white; font-size: 3rem; font-family: Arial, sans-serif; text-transform: uppercase; letter-spacing: 3px; margin: 0; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); }
 
