@@ -294,6 +294,11 @@ nav ul {
 /* Styling for the Image Container */ .banner-photo-container { width: 100%; display: flex; justify-content: center; }
 
 /* The Photo itself */ .main-photo { width: 100%; max-width: 1200px; height: auto; display: block; }
+.hero-banner-photo { /* This points to your photo */ background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/whowearebanner.jpg');
+
+}
+
+.banner-text h1 { color: white; font-size: 3rem; font-family: Arial, sans-serif; text-transform: uppercase; letter-spacing: 3px; margin: 0; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); }
 
 
 .biography .container {
