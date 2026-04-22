@@ -60,13 +60,13 @@ main {
 
 /* Navigation bar centered */
 .main-nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  ga
-  padding: 0;
-  margin: 1rem 0 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Clean, even spacing */
+    padding: 0;
+    margin: 2rem 0 0;
 }
 
 .main-nav a {
