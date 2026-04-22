@@ -717,7 +717,7 @@ main {
 }
 
 /* Responsive for small screens (Phones) */
-@media (max-width: 480px) {
+@media (max-width: 40px) {
   .social-icon {
     width: 30px !important; /* Slightly smaller for phones */
     height: auto !important;
