@@ -297,7 +297,7 @@ nav ul {
 
     /* 3. This makes the photo fill the screen and stay centered */
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
 
     /* 4. This centers the "Who We Are" text exactly in the middle */
