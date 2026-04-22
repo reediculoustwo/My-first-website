@@ -33,7 +33,7 @@ main {
 
 /* Logo image */
 .main-site-logo {
-    width: 180px !important; /* Increased from 100px */
+    width: 200px !important; /* Increased from 100px */
     height: auto;
     margin-bottom: 10px;
     border-radius: 50%; /* Keeps it circular if you like that look */
