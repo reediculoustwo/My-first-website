@@ -17,17 +17,12 @@ main {
 /* Apply this to the parent container of the logo */
 /* HEADER */
 .site-header {
-  background-color: #fadfb4;
-  padding: 2rem 0 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative; 
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    background-color: #fadfb4; /* Matching the body cream */
+    padding: 3rem 0 2rem; /* More space at the top/bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 /* Logo container */
 .logo-container {
   display: flex;
@@ -38,10 +33,10 @@ main {
 
 /* Logo image */
 .main-site-logo {
-  width: 180px;   /* force larger display */
-  height: auto;
-  border-radius: 50%;
-     /* prevents scaling down by parent */
+    width: 180px !important; /* Increased from 100px */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Keeps it circular if you like that look */
 }
 
 /* Title under logo */
