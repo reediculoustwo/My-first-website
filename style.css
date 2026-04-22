@@ -288,21 +288,19 @@ nav ul {
 }
 
 .hero-banner {
-    /* Use the photo as the background */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    /* 1. Link to your photo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
                       url('images/whowearebanner.jpg');
-    
-    /* This height shows more of the photo. Increase to 400px if you want to see more! */
-    height: 300px; 
-    
-    /* This ensures the middle of the photo is always visible */
-    background-position: center; 
-    
-    /* This makes sure the photo covers the whole width */
+
+    /* 2. Make it thin but visible (Adjust 250px to make it thinner or thicker) */
+    height: 250px;
+
+    /* 3. This makes the photo fill the screen and stay centered */
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 
-    /* This centers the white 'Who We Are' text */
+    /* 4. This centers the "Who We Are" text exactly in the middle */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,12 +308,12 @@ nav ul {
 }
 
 .hero-banner h1 {
-    color: #ffffff;
-    font-size: 3.5rem; /* Larger text like your screenshot */
-    margin: 0;
+    color: white;
+    font-size: 3rem;
     font-family: Arial, sans-serif;
     text-transform: uppercase;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Helps white text stand out */
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .biography .container {
@@ -720,8 +718,8 @@ main {
 /* Responsive for small screens */
 @media (max-width: 480px) {
  .social-icon {
-  width: 10px;          /* same width for both icons */
-  height: 10px;         /* same height for both */
+  width: 5px;          /* same width for both icons */
+  height: 5px;         /* same height for both */
   object-fit: contain;  /* keeps logo proportion correct */
   vertical-align: middle;
   margin: 0 5px;        /* small space between them */
