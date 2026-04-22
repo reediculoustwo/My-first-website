@@ -17,11 +17,12 @@ main {
 /* Apply this to the parent container of the logo */
 /* HEADER */
 .site-header {
-    background-color: #fadfb4; /* Matching the body cream */
-    padding: 3rem 0 2rem; /* More space at the top/bottom */
+    background-color: #fadfb4; 
+    padding: 4rem 0 2rem; /* Increased top padding for a grander feel */
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 /* Logo container */
 .logo-container {
@@ -33,19 +34,21 @@ main {
 
 /* Logo image */
 .main-site-logo {
-    width: 200px !important; /* Increased from 100px */
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 50%; /* Keeps it circular if you like that look */
+    width: 280px !important; /* Bumped up significantly from 200px */
+    max-width: 90% !important; /* Ensures it doesn't break on mobile */
+    height: auto !important;
+    margin-bottom: 20px; /* More space between logo and title */
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(151, 68, 24, 0.1); /* Subtle "lift" */
 }
 
 /* Title under logo */
 .site-title {
-  font-family: 'Playfair Display', serif;
-  color: #974418;
-  font-size: 2rem;
-  margin-top: 0.5rem;
-  text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #974418;
+    font-size: 2.8rem; /* Slightly larger title to match big logo */
+    margin-top: 0;
+    text-align: center;
 }
 
 .logo-container {
