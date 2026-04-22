@@ -716,18 +716,48 @@ main {
   margin: 0;
 }
 
-/* Responsive for small screens */
-@media (max-width: 480px) {
- .social-icon {
-  width: 5px;          /* same width for both icons */
-  height: 5px;         /* same height for both */
-  object-fit: contain;  /* keeps logo proportion correct */
-  vertical-align: middle;
-  margin: 0 5px;        /* small space between them */
+/* --- CLEANED FOOTER SECTION --- */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background-color: #8b4513; 
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  width: 40px !important; /* Forces standard size on desktop */
+  height: auto !important;
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .social-icon:hover {
-  transform: scale(1.2); /* nice hover effect */
+  transform: scale(1.2);
 }
 
+.footer p {
+  font-size: 0.9rem;
+  color: #fff !important;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive for small screens (Phones) */
+@media (max-width: 480px) {
+  .social-icon {
+    width: 30px !important; /* Slightly smaller for phones */
+    height: auto !important;
+    margin: 0 5px;
+  }
+}
