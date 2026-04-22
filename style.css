@@ -700,8 +700,8 @@ main {
 }
 
 .social-icon {
-  width: 30px; /* adjust icon size */
-  height: 30px;
+  width: 5px; /* adjust icon size */
+  height: 5px;
   transition: transform 0.3s ease;
 }
 
