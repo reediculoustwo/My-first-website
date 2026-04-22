@@ -684,35 +684,36 @@ main {
 /* Optional responsive layout for icons */
 .footer-container {
   display: flex;
+  flex-direction: column; /* Stacks icons on top of text */
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  padding: 20px 0;
+  background-color: #8b4513; /* Matches your brown footer color */
 }
 
 .social-links {
-  margin: 15px 0;
-}
-
-.social-links a {
-  margin: 0 10px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the two icons */
+  margin-bottom: 10px;
 }
 
 .social-icon {
-  width: 5px; /* adjust icon size */
-  height: 5px;
+  /* This is the important part! */
+  width: 40px;  /* Adjust this number (e.g., 30px) to make them smaller */
+  height: auto; /* Keeps the logo from looking squished */
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .social-icon:hover {
-  transform: scale(1.2); /* slight zoom effect on hover */
+  transform: scale(1.2);
 }
 
 .footer p {
   font-size: 0.9rem;
-  margin-top: 10px;
   color: #fff;
+  margin: 0;
 }
 
 /* Responsive for small screens */
