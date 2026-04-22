@@ -293,7 +293,7 @@ nav ul {
                       url('images/whowearebanner.jpg');
 
     /* 2. Make it thin but visible (Adjust 250px to make it thinner or thicker) */
-    height: 300px;
+    height: 320px;
 
     /* 3. This makes the photo fill the screen and stay centered */
     background-size: cover;
@@ -384,7 +384,7 @@ nav ul {
   .bio img {
     width: 70%;
     max-width: 280px;
-    height:250px;
+    height: 250px;
     margin-bottom: 1.5rem;
   }
 
@@ -410,7 +410,7 @@ nav ul {
 
   .bio img {
     max-width: 220px;
-    height: 250;
+    height: 250px;
     margin-bottom: 1rem;
   }
 
