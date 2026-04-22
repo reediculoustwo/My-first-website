@@ -497,6 +497,7 @@ nav ul {
   max-width: 700px;
   width: 100%;
   text-align: center;
+}
   
 .contact-section h2 {
   font-family: 'Playfair Display', serif;
@@ -717,7 +718,7 @@ main {
 }
 
 /* Responsive for small screens (Phones) */
-@media (max-width: 40px) {
+@media (max-width: 600px) {
   .social-icon {
     width: 30px !important; /* Slightly smaller for phones */
     height: auto !important;
