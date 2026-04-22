@@ -37,7 +37,7 @@ main {
 }
 
 /* Logo image */
-.logo {
+.main-site-logo {
   width: 280px;   /* force larger display */
   height: auto;
   border-radius: 50%;
@@ -116,30 +116,25 @@ nav a:hover {
 
   /* Hero section */
 .hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 2rem;
-  background: #fff8ec;
-  gap: 2rem;
+    background-color: #fadfb4 !important; /* Changed from red to cream */
+    color: #974418 !important; /* Changed text to your brand brown */
+    padding: 5rem 2rem; /* Added padding to make it feel "full" */
+    text-align: center;
+    border-top: 1px solid rgba(151, 68, 24, 0.1); /* Subtle divider */
 }
 
-.hero-text {
-  max-width: 600px;
+.hero h2 {
+    color: #974418 !important; /* Ensuring the title is brown */
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
-.hero-text h2 {
-  color: #b17457;
-  font-size: 2.4rem;
+.hero .lead {
+    color: #974418 !important;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
 }
-
-.hero-photo img {
-  max-width: 350px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
 /* Alternating content boxes */
 .alt-box {
   display: flex;
