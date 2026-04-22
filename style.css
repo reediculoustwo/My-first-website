@@ -293,7 +293,7 @@ nav ul {
                       url('images/whowearebanner.jpg');
 
     /* 2. Make it thin but visible (Adjust 250px to make it thinner or thicker) */
-    height: 280px;
+    height: 300px;
 
     /* 3. This makes the photo fill the screen and stay centered */
     background-size: cover;
