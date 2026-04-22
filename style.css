@@ -433,7 +433,7 @@ nav ul {
 
 .workshop-main-photo {
     width: 100%;
-    max-width: 800px; /* Limits size on big screens */
+    max-width: 600px; /* Limits size on big screens */
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Soft shadow */
@@ -591,7 +591,7 @@ nav ul {
   text-align: center;
 }
 /* Optional: Mobile responsive improvements */
-@media (max-width: 600px) {
+@media (max-width: 30px) {
   .enquiry-form {
     padding: 1.5rem;
   }
@@ -679,43 +679,6 @@ main {
 }
 
   /* Footer Styling */
-
-
-/* Optional responsive layout for icons */
-.footer-container {
-  display: flex;
-  flex-direction: column; /* Stacks icons on top of text */
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  background-color: #8b4513; /* Matches your brown footer color */
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Space between the two icons */
-  margin-bottom: 10px;
-}
-
-.social-icon {
-  /* This is the important part! */
-  width: 40px;  /* Adjust this number (e.g., 30px) to make them smaller */
-  height: auto; /* Keeps the logo from looking squished */
-  transition: transform 0.3s ease;
-  display: block;
-}
-
-.social-icon:hover {
-  transform: scale(1.2);
-}
-
-.footer p {
-  font-size: 0.9rem;
-  color: #fff;
-  margin: 0;
-}
-
 /* --- CLEANED FOOTER SECTION --- */
 
 .footer-container {
