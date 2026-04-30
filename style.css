@@ -34,7 +34,7 @@ main {
 
 /* Logo image */
 .main-site-logo {
-    width: 280px !important; /* Bumped up significantly from 200px */
+    width: 200px !important; /* Bumped up significantly from 200px */
     max-width: 90% !important; /* Ensures it doesn't break on mobile */
     height: auto !important;
     margin-bottom: 20px; /* More space between logo and title */
