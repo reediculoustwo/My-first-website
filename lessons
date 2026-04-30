@@ -1,0 +1,65 @@
+<main class="lesson-page container">
+  <!-- INTRO SECTION -->
+  <section class="lesson-intro">
+    <h2>Lessons</h2>
+    <p class="lead">As part of our mission to celebrate double-reed instruments, we offer personalised one-to-one lessons for anyone curious about the oboe or the bassoon.</p>
+    
+    <div class="lesson-description">
+      <p>Whether you’re a complete beginner, working towards grade exams, preparing for music college, or simply looking to enjoy music at your own pace, our lessons are always shaped around you. We tailor each session to your goals, experience, and interests because learning a double reed instrument should be just as fun as it is rewarding.</p>
+      <p><strong>Lessons are available from age 7 for both oboe and bassoon.</strong></p>
+      <p>For younger children, we also offer <em>Introduction to Music</em> sessions, designed to build early musical skills in a playful, engaging, and confidence-boosting way.</p>
+    </div>
+
+    <div class="expectations-box">
+      <h3>In our lessons, you can expect to:</h3>
+      <ul>
+        <li>Learn how to read and understand music</li>
+        <li>Explore a wide range of repertoire, from baroque to contemporary</li>
+        <li>Develop solid technique while enjoying the music you play</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LESSON TYPES TABLE -->
+  <section class="lesson-table-section">
+    <div class="table-container">
+      <table class="fees-table">
+        <thead>
+          <tr>
+            <th>Type of lesson</th>
+            <th>1-1 In-person</th>
+            <th>1-1 Online</th>
+            <th>Group Online</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Instrumental</strong> (Oboe, Bassoon)</td>
+            <td>60/90 minutes</td>
+            <td>30/45/60/90 minutes</td>
+            <td>n/a</td>
+          </tr>
+          <tr>
+            <td><strong>Reed-making</strong></td>
+            <td>60 minutes</td>
+            <td>15/30/45/60 minutes</td>
+            <td>45 min overview + Q&A</td>
+          </tr>
+          <tr>
+            <td><strong>Music Theory</strong></td>
+            <td>60 minutes</td>
+            <td>30/45/60 minutes</td>
+            <td>n/a</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="lesson-cta">
+    <p>If you’d like more information about lesson rates, please fill in the <a href="contact.html">enquiry form</a> or email us at <a href="mailto:reediculoustwo@gmail.com">reediculoustwo@gmail.com</a>.</p>
+    <p><strong>Ready to start your Reed’iculous journey? Get in touch and book your first lesson!</strong></p>
+    <a href="contact.html" class="btn">Book a Lesson</a>
+  </section>
+</main>
