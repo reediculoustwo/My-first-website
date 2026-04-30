@@ -428,10 +428,23 @@ nav ul {
 
 /* Individual photo wrapper */
 .gallery-item {
-  flex: 1;                /* Makes photos equal width */
-  max-width: 300px;       /* Limits size so they don't get too big */
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column; /* Stacks image and text vertically */
+  align-items: center;
 }
 
+.gallery-caption {
+  margin-top: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #974418; /* Using your brand brown */
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4;
+  font-style: italic;
+}
 
 .gallery-item img {
   width: 100%;
