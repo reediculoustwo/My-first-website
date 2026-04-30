@@ -432,11 +432,20 @@ nav ul {
   max-width: 300px;       /* Limits size so they don't get too big */
 }
 
+
 .gallery-item img {
   width: 100%;
-  height: auto;
+  /* This forces all images to be the same shape (4:3 ratio) */
+  aspect-ratio: 4 / 3; 
+  
+  /* This ensures the image fills the area without stretching */
+  object-fit: cover; 
+  
+  /* This keeps the center of the photo visible */
+  object-position: center; 
+
   border-radius: 12px;
-  border: 5px solid white; /* Matching your existing style */
+  border: 5px solid white;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   display: block;
 }
