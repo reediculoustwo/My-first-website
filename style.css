@@ -33,13 +33,11 @@ main {
 }
 
 /* Logo image */
+/* This forces the header logo to stay the correct size on all pages */
 .main-site-logo {
-    width: 200px !important; /* Bumped up significantly from 200px */
-    max-width: 90% !important; /* Ensures it doesn't break on mobile */
+    width: 280px !important; 
     height: auto !important;
-    margin-bottom: 20px; /* More space between logo and title */
-    border-radius: 50%;
-   
+    display: block;
 }
 
 /* Title under logo */
