@@ -47,15 +47,18 @@
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="contact">Contact Number</label>
-          <input type="tel" id="contact" name="Contact Number" placeholder="mobile phone number">
-        </div>
-
-         <div class="form-group">
-          <label for="contact">Email</label>
-          <input type="tel" id="email" name="Email address" placeholder="Your preferred email to contact">
-        </div>
+       <div class="form-group">
+  <label for="contact">Contact Number</label>
+  <!-- Matches Column D -->
+  <input type="tel" id="contact" name="Contact Number" placeholder="mobile phone number">
+</div>
+        
+<div class="form-group">
+  <label for="email">Email</label>
+  <!-- CHANGED: name="Email" now matches Column E exactly -->
+  <!-- CHANGED: type="email" ensures they enter a valid email address -->
+  <input type="email" id="email" name="Email" placeholder="Your preferred email to contact" required>
+</div>
         
       <div class="form-group">
         <label for="enquiry-type">Type of Enquiry</label>
@@ -75,17 +78,17 @@
           <label for="experience">Years of Learning the Instrument</label>
           <input type="number" id="experience" name="Years of Learning" min="0" max="80" placeholder="e.g. 4">
         </div>
-
-          <div class="form-group">
-        <label for="enquiry-type">What is your preferred lesson time?</label>
-        <select id="enquiry-type">
-          <option value="">-- Select --</option>
-          <option value="Midday">Weekdays Midday/Mornings (9am-2pm) (Most availability)</option>
-          <option value="After-school/Evenings ">Weekdays After-school/Evenings (Less availabilities, varies on day, time and amount of enquires)</option>
-          <option value="Midday">Weekend (Limited slots)</option>
-         </select>
-      </div>
-        
+        
+<div class="form-group">
+  <label for="lesson-time">What is your preferred lesson time?</label>
+  <!-- ADDED: name="What is your preferred lesson time?" to match Column H -->
+  <select id="lesson-time" name="What is your preferred lesson time?">
+    <option value="">-- Select --</option>
+    <option value="Midday">Weekdays Midday/Mornings (9am-2pm) (Most availability)</option>
+    <option value="After-school/Evenings">Weekdays After-school/Evenings (Waitlist)</option>
+    <option value="Weekend">Weekend (Limited slots)</option>
+  </select>
+</div>
         <div class="form-group">
           <label for="reason">Enquiry Reason</label>
           <textarea id="reason" name="Enquiry Reason" rows="5" placeholder="Tell us more..." required></textarea>
