@@ -113,7 +113,8 @@
   const form = document.getElementById('contactForm');
   const status = document.getElementById('form-status');
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzVLOChaujvs0uMi8F8TKIG8empbhZPaVN2RTVhrJoCWNhp93pBwz1b8IaPFgPKPSB4/exec';
+  // Use your LATEST Deployment URL from Apps Script
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyIyXInbV2pxG-w5yMOctSHaaEdPTeEKMh0l9SPEvPNJxS3RpzIrccLxl9rSw17J23L/exec';
 
   form.addEventListener('submit', e => {
     e.preventDefault();
@@ -121,7 +122,7 @@
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
 
-    // We manually grab the values from the IDs to ensure they aren't blank
+    // We manually bundle the data to ensure it isn't blank
     const formData = new URLSearchParams();
     formData.append('First Name', document.getElementById('fname').value);
     formData.append('Last Name', document.getElementById('lname').value);
@@ -132,9 +133,12 @@
     formData.append('What is your preferred lesson time?', document.getElementById('lesson-time').value);
     formData.append('Enquiry Reason', document.getElementById('reason').value);
 
+    // This helps you check if the email is captured before sending
+    console.log("Sending to script:", document.getElementById('email').value);
+
     fetch(scriptURL, { 
       method: 'POST', 
-      body: formData, // URLSearchParams is much easier for Google to read
+      body: formData, 
       mode: 'no-cors' 
     })
     .then(() => {
@@ -152,7 +156,6 @@
     });
   });
 </script>
-
   <!-- ========= Footer ========= -->
   <!-- ========= Footer ========= -->
   <footer class="footer">
