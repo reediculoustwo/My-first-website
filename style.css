@@ -11,7 +11,7 @@ body {
 /* Main content expands to push footer down */
 main {
   padding-top: 120px;
-  flex: 1;
+  flex: 1; 
 }
 
 /* Apply this to the parent container of the logo */
@@ -380,7 +380,7 @@ nav ul {
   }
 
   .bio-text {
-    text-align: center;
+    text-align: right;
   }
 
   .bio-text p {
