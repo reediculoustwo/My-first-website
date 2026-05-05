@@ -380,7 +380,7 @@ nav ul {
   }
 
   .bio-text {
-    text-align: right;
+    text-align: center;
   }
 
   .bio-text p {
@@ -389,29 +389,36 @@ nav ul {
 }
 
 /*phones*/
-
 @media (max-width: 480px) {
   .biography {
     padding: 2rem 1rem;
   }
 
-  .bio {
+  .bio, .bio-reverse {
     padding: 1.2rem;
+    display: flex;
+    flex-direction: column; /* Ensures image stays on top of text */
+    align-items: center;    /* Centers the image and text container */
   }
 
   .bio img {
     max-width: 220px;
-    height: 250px;
+    height: auto;           /* Changed from 250px to auto to prevent stretching */
     margin-bottom: 1rem;
+    border-radius: 8px;     /* Optional: adds a slight curve to the photo */
   }
 
   .bio-text h2 {
     font-size: 1.4rem;
+    text-align: center;     /* Centers "Charis Lai" above the text */
+    margin-bottom: 0.5rem;
   }
 
   .bio-text p {
-    font-size: 1.05rem; /* slightly larger for readability */
+    font-size: 1.05rem; 
     line-height: 1.6;
+    text-align: left;       /* THE FIX: Specifically stops the weird spacing */
+    margin-bottom: 1.2rem;  /* Adds space between paragraphs */
   }
 }
 
